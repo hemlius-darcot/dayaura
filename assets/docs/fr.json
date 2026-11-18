@@ -1,0 +1,219 @@
+{
+  "language_code": "fr",
+  "language_name": "Français",
+  "doc_title": "DayAura Paper",
+  "doc_subtitle": "Guide Visuel Officiel et Manuel Complet des Fonctionnalités de DayAura",
+  "search_placeholder": "Rechercher des fonctions ou des règles...",
+  "sections": [
+    {
+      "id": "introduction",
+      "category": "À propos",
+      "title": "Présentation et Objectif Fondamental de DayAura",
+      "subtitle": "Un outil pour se maîtriser et remporter la bataille contre soi-même",
+      "icon": "auto_awesome",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Bienvenue dans DayAura Paper"
+        },
+        {
+          "type": "paragraph",
+          "text": "DayAura est une application de discipline quotidienne et de suivi de la progression. Grâce à des chandeliers graphiques et des courbes fluides, vous pouvez évaluer votre élan quotidien avec une clarté remarquable."
+        },
+        {
+          "type": "quote",
+          "text": "Vous trouverez des centaines d'applications de routines sur le web. Mais il est presque impossible d'en trouver une qui suive simultanément vos routines, vos distractions et votre régularité, tout en vous permettant de vous justifier à vos propres yeux."
+        },
+        {
+          "type": "paragraph",
+          "text": "La plus grande vertu d'un être humain est de pouvoir se justifier à ses propres yeux et de se bâtir une identité unique. La plus grande bataille au monde est celle que l'on mène contre soi-même. Je souhaite que vous meniez ce combat et en sortiez victorieux."
+        },
+        {
+          "type": "callout",
+          "callout_type": "tip",
+          "subtitle": "Le Vœu du Développeur",
+          "text": "Si DayAura vous apporte ne serait-ce que le moindre bénéfice, je considérerai ma tâche accomplie. Tous mes vœux de réussite vous accompagnent ! 🥰🥳"
+        }
+      ]
+    },
+    {
+      "id": "first_launch",
+      "category": "Démarrage",
+      "title": "1. Premier Lancement et Profil",
+      "subtitle": "Les premières étapes pour déverrouiller l'application",
+      "icon": "task_alt",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Statut et Autorisation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lors de la toute première ouverture, l'écran ci-dessous s'affichera. Choisissez simplement votre statut actuel et cliquez sur 'Save profile and continue'."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_09-47-28.jpg",
+          "caption": "Écran Initial de Configuration de Profil (Appuyez pour Zoomer)"
+        }
+      ]
+    },
+    {
+      "id": "candle_chart",
+      "category": "Graphiques",
+      "title": "2. Graphique Cumulatif en Chandeliers",
+      "subtitle": "Suivi visuel sous forme de chandeliers ou de courbes",
+      "icon": "candlestick_chart",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Tableau de Bord et Chandeliers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dès l'accueil, le CUMULATIVE CANDLE CHART affiche votre accomplissement quotidien sous forme de chandeliers (verts, jaunes, rouges) ou de lignes continues."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/Screenshot_20261102_095714.png",
+          "caption": "Vue Générale du Tableau de Bord DayAura (Appuyez pour Zoomer)"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-58.jpg",
+          "caption": "Vue en Chandeliers: Chandeliers Verts, Jaunes et Rouges"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-59.jpg",
+          "caption": "Vue en Courbe Continue de Progression"
+        },
+        {
+          "type": "subheading",
+          "text": "Historique d'un Jour Précis"
+        },
+        {
+          "type": "paragraph",
+          "text": "Touchez simplement le chandelier d'un jour précis pour ouvrir l'historique complet et les détails des tâches réalisées."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-16-30.jpg",
+          "caption": "Historique Quotidien Détaillé (Appuyez pour Zoomer)"
+        }
+      ]
+    },
+    {
+      "id": "routine_setup",
+      "category": "Routines",
+      "title": "3. Configuration: Mode Auto vs Manuel",
+      "subtitle": "Gestion du temps et règles strictes anti-chevauchement",
+      "icon": "checklist",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Ajouter une Tâche"
+        },
+        {
+          "type": "paragraph",
+          "text": "À côté du bouton Accueil, appuyez sur 'Add Task' pour planifier vos routines."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-20-27.jpg",
+          "caption": "Fiche de Création de Tâche et Choix du Mode (Appuyez pour Zoomer)"
+        },
+        {
+          "type": "step",
+          "step": 1,
+          "subtitle": "Mode Auto",
+          "text": "En mode Auto, vous ne pouvez pas modifier le temps déjà écoulé. Vous planifiez uniquement à partir du moment présent."
+        },
+        {
+          "type": "step",
+          "step": 2,
+          "subtitle": "Mode Manuel",
+          "text": "En mode Manuel, vous disposez d'une liberté totale pour structurer vos blocs de temps comme bon vous semble."
+        },
+        {
+          "type": "callout",
+          "callout_type": "warning",
+          "subtitle": "Règle de Chevauchement",
+          "text": "Dans les deux modes, aucune tâche ne peut empiéter sur l'horaire d'une autre tâche."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-11-08.jpg",
+          "caption": "Réglage de l'Alarme Anticipée (Appuyez pour Zoomer)"
+        }
+      ]
+    },
+    {
+      "id": "distraction_tracker",
+      "category": "Focus",
+      "title": "4. Traqueur de Distractions",
+      "subtitle": "Identifiez les pertes de concentration grâce au bouton flottant",
+      "icon": "do_not_disturb_on",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Comprendre ses Faiblesses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cette fonctionnalité sert à enregistrer avec exactitude les motifs et la fréquence de vos moments d'inattention au fil de la journée."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-20-29.jpg",
+          "caption": "Activation du Traqueur de Distraction (Appuyez pour Zoomer)"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-21-12.jpg",
+          "caption": "Bouton Flottant Discret à l'Écran (Appuyez pour Zoomer)"
+        }
+      ]
+    },
+    {
+      "id": "consistency_tracker",
+      "category": "Habitudes",
+      "title": "5. Traqueur de Régularité (Consistency Tracker)",
+      "subtitle": "Tenir ses engagements et briser les mauvaises habitudes",
+      "icon": "insights",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Protéger sa Série Ininterrompue"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si vous vous promettez de ne plus jamais céder à une addiction, ce compteur enregistrera avec rigueur chaque jour où votre volonté est restée inébranlable."
+        }
+      ]
+    },
+    {
+      "id": "export_import",
+      "category": "Sécurité",
+      "title": "6. Sauvegarde et Restauration (Export & Import)",
+      "subtitle": "Données locales privées et transfert sur nouvel appareil",
+      "icon": "cloud_sync",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Confidentialité Totale sur Votre Téléphone"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dans DayAura, vos données personnelles restent stockées localement sur votre appareil sans jamais fuiter vers l'extérieur."
+        },
+        {
+          "type": "callout",
+          "callout_type": "warning",
+          "subtitle": "Sauvegardez Régulièrement",
+          "text": "Pensez à exporter régulièrement votre sauvegarde vers votre cloud personnel pour prévenir toute perte en cas de panne de téléphone."
+        }
+      ]
+    }
+  ]
+}

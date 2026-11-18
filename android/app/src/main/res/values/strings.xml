@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DayAura</string>
+    <string name="device_admin_label">DayAura Anti-Uninstall Protection</string>
+    <string name="device_admin_description">Prevents uninstallation of DayAura while Locked In mode is active to help overcome addictions.</string>
+    <string name="accessibility_service_label">DayAura Browser Guard</string>
+    <string name="accessibility_service_description">Detects and blocks adult, gaming, and distracting websites in web browsers during focus sessions.</string>
+</resources>

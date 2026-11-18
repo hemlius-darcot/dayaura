@@ -1,0 +1,211 @@
+{
+  "language_code": "es",
+  "language_name": "Español",
+  "doc_title": "DayAura Paper",
+  "doc_subtitle": "Guía Oficial de Usuario y Manual Completo de DayAura",
+  "search_placeholder": "",
+  "sections": [
+    {
+      "id": "introduction",
+      "category": "",
+      "title": "Introducción y Propósito Principal",
+      "subtitle": "",
+      "icon": "description",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Esta es una aplicación de seguimiento de progreso. A través de velas gráficas (Candles) o líneas de progreso (Lines), podrás monitorear tu avance diario."
+        },
+        {
+          "type": "paragraph",
+          "text": "Encontrarás cientos de aplicaciones de rutinas en internet, pero es casi imposible hallar una que registre simultáneamente tus rutinas, tus distracciones y tu consistencia, permitiéndote calcular tu progreso y justificarte ante tus propios ojos. La mayor virtud de una persona es justificarse ante sí misma y forjar una identidad única. La mayor batalla en este mundo es la batalla contra uno mismo. Si el uso de DayAura te aporta el más mínimo beneficio, consideraré mi trabajo un verdadero éxito."
+        },
+        {
+          "type": "quote",
+          "text": "¡Te deseo el mayor de los éxitos! 🥰🥳"
+        }
+      ]
+    },
+    {
+      "id": "how_to_use",
+      "category": "",
+      "title": "¿Cómo usar la aplicación?",
+      "subtitle": "",
+      "icon": "help",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Primero quiero disculparme sinceramente. Al añadir tantas funciones avanzadas, no logré que la aplicación fuera completamente intuitiva a primera vista. Pero una vez que aprendas a usar cada sección, todo te resultará muy fácil."
+        }
+      ]
+    },
+    {
+      "id": "step_1",
+      "category": "",
+      "title": "1. Primer Inicio y Selección de Estado",
+      "subtitle": "",
+      "icon": "check",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_09-47-28.jpg",
+          "caption": "Primera pantalla al abrir la aplicación"
+        },
+        {
+          "type": "paragraph",
+          "text": "Al abrir la app aparecerá esta pantalla. No es nada complicado: simplemente selecciona tu estado actual y presiona 'Save profile and continue'. Inmediatamente recibirás permiso para usar la aplicación."
+        }
+      ]
+    },
+    {
+      "id": "step_2",
+      "category": "",
+      "title": "2. Página Principal y Gráfico de Velas",
+      "subtitle": "",
+      "icon": "candlestick_chart",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/Screenshot_20261102_095714.png",
+          "caption": "Página principal y gráfico acumulativo de velas"
+        },
+        {
+          "type": "paragraph",
+          "text": "En cuanto se conceda el permiso, ingresarás a la página de inicio."
+        },
+        {
+          "type": "paragraph",
+          "text": "En el CUMULATIVE CANDLE CHART podrás ver tu progreso diario en estilo de velas o líneas. Tras registrar tu avance, el gráfico lucirá como en las siguientes capturas:"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-58.jpg",
+          "caption": "Gráfico de progreso diario en estilo de velas"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-59.jpg",
+          "caption": "Gráfico de progreso diario en estilo de línea"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si tocas la vela de cualquier día específico, podrás ver el historial completo de ese día."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-16-30.jpg",
+          "caption": "Historial detallado tras hacer clic en una vela"
+        }
+      ]
+    },
+    {
+      "id": "step_3",
+      "category": "",
+      "title": "3. Configuración de Rutinas (Modo Auto vs Manual)",
+      "subtitle": "",
+      "icon": "checklist",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Al lado del botón de Inicio se encuentra el botón Add Task."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-20-27.jpg",
+          "caption": "Creación de tareas y selección de modo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pulsando aquí puedes configurar tu rutina diaria. Existen 2 modos: 1. Modo Auto y 2. Modo Manual. En el modo Auto no tienes control sobre el tiempo pasado, mientras que en el modo Manual cuentas con libertad absoluta."
+        },
+        {
+          "type": "subheading",
+          "text": "3.1. ¿Cómo añadir una tarea o crear una rutina?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Para aprender a añadir tareas o crear rutinas, puedes ver el siguiente video tutorial:"
+        },
+        {
+          "type": "video",
+          "asset_path": "assets/videos/task_creation_tutorial.mp4",
+          "caption": "Video Tutorial: Cómo añadir tareas y crear rutinas (Toca para reproducir)"
+        },
+        {
+          "type": "subheading",
+          "text": "3.1.1. Modo Auto y Regla de Superposición"
+        },
+        {
+          "type": "paragraph",
+          "text": "En el modo Auto no se puede seleccionar tiempo ya transcurrido. En ambos modos, una tarea nunca puede superponerse en el horario de otra."
+        },
+        {
+          "type": "subheading",
+          "text": "3.1.2. Opción de Alarma Anticipada"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-11-08.jpg",
+          "caption": "Ajuste de minutos previos para que suene la alarma"
+        },
+        {
+          "type": "paragraph",
+          "text": "La opción de alarma situada en la parte inferior determina cuántos minutos antes de que termine la tarea sonará el aviso."
+        }
+      ]
+    },
+    {
+      "id": "step_4",
+      "category": "",
+      "title": "4. Rastreador de Distracciones (Distraction Tracker)",
+      "subtitle": "",
+      "icon": "do_not_disturb_on",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Esta función se diseñó para rastrear qué motivos y cuántas veces al día interrumpen tu concentración."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-20-29.jpg",
+          "caption": "Pantalla para activar el rastreador de distracciones"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-21-12.jpg",
+          "caption": "Botón flotante en pantalla"
+        },
+        {
+          "type": "paragraph",
+          "text": "Concediendo el permiso 'Display over other apps' y activando el rastreador, aparecerá un botón flotante. En cuanto notes que te has distraído, presiona el botón y anota la razón para guardarla en tu sesión de hoy."
+        }
+      ]
+    },
+    {
+      "id": "step_5",
+      "category": "",
+      "title": "5. Rastreador de Consistencia (Consistency Tracker)",
+      "subtitle": "",
+      "icon": "insights",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Con esta función puedes monitorear tu consistencia. Imagina que has decidido no volver a caer en un mal hábito o adicción. Mientras mantengas tu promesa, este rastreador medirá tu racha día tras día."
+        }
+      ]
+    },
+    {
+      "id": "step_6",
+      "category": "",
+      "title": "6. Exportar e Importar Datos (Export & Import Data)",
+      "subtitle": "",
+      "icon": "cloud_sync",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tus datos personales se guardan en el almacenamiento local de tu teléfono. Si pierdes el móvil, los datos se perderán para siempre. Por eso, exporta periódicamente una copia de respaldo para transferirla o recuperarla cuando lo necesites."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "language_code": "en",
+  "language_name": "English",
+  "doc_title": "DayAura Paper",
+  "doc_subtitle": "Official User Guide & Feature Handbook for DayAura",
+  "search_placeholder": "",
+  "sections": [
+    {
+      "id": "introduction",
+      "category": "",
+      "title": "Introduction & Core Purpose",
+      "subtitle": "",
+      "icon": "description",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "DayAura is a daily progress tracking application. You can track your daily progress visually using graph candles or graph lines."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can find hundreds of routine apps on the internet. But I could never find an app that allows you to simultaneously track your routines, distractions, and consistency, while calculating your daily progress and justifying yourself in your own eyes. A person's greatest virtue is being able to justify themselves in their own eyes and building a unique identity. And the greatest battle on earth is the battle against oneself. I want you to fight that battle and succeed. If using DayAura provides even the slightest benefit to you, I will consider my effort worthwhile."
+        },
+        {
+          "type": "quote",
+          "text": "Wishing you the very best! 🥰🥳"
+        }
+      ]
+    },
+    {
+      "id": "how_to_use",
+      "category": "",
+      "title": "How to Use the App?",
+      "subtitle": "",
+      "icon": "help",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "First, I sincerely apologize. Because I added multiple advanced features, I was not able to make the app completely user-friendly at first glance. But once you learn how everything works, everything will become very simple and easy for you."
+        }
+      ]
+    },
+    {
+      "id": "step_1",
+      "category": "",
+      "title": "1. First Launch & Profile Status Selection",
+      "subtitle": "",
+      "icon": "check",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_09-47-28.jpg",
+          "caption": "Initial screen when opening the app for the first time"
+        },
+        {
+          "type": "paragraph",
+          "text": "When you open the app, this screen will appear. This is not complicated. Here, select your current status and tap 'Save profile and continue'. You will immediately be granted permission to use the app."
+        }
+      ]
+    },
+    {
+      "id": "step_2",
+      "category": "",
+      "title": "2. Home Page & Cumulative Candle Chart",
+      "subtitle": "",
+      "icon": "candlestick_chart",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/Screenshot_20261102_095714.png",
+          "caption": "Home page and Cumulative Candle Chart"
+        },
+        {
+          "type": "paragraph",
+          "text": "As soon as permission is granted, you will arrive at the home page."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here, on the CUMULATIVE CANDLE CHART, you can view your daily progress in candle or line style. After tracking your daily progress, your graph chart will look like the screenshots below:"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-58.jpg",
+          "caption": "Daily progress chart in Candle style"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-59.jpg",
+          "caption": "Daily progress chart in Line style"
+        },
+        {
+          "type": "paragraph",
+          "text": "Then, if you click on the candle of any specific day, you can view the complete history of that day."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-16-30.jpg",
+          "caption": "Detailed day history view after clicking on a day candle"
+        }
+      ]
+    },
+    {
+      "id": "step_3",
+      "category": "",
+      "title": "3. Routine & Task Setup (Auto vs Manual Mode)",
+      "subtitle": "",
+      "icon": "checklist",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Right beside the Home button, there is the Add Task button."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-20-27.jpg",
+          "caption": "Task creation and execution mode selection"
+        },
+        {
+          "type": "paragraph",
+          "text": "By clicking here, you can set up your daily routine. There are 2 modes: 1. Auto mode, 2. Manual mode. In Auto Mode, you have no control over passed time, whereas in Manual Mode, you are given absolute freedom over your daily tasks and routines."
+        },
+        {
+          "type": "subheading",
+          "text": "3.1. How to add a task or create a routine?"
+        },
+        {
+          "type": "paragraph",
+          "text": "To add a task or create a routine, you can watch this video. As an Android user, I hope you will easily understand:"
+        },
+        {
+          "type": "video",
+          "asset_path": "assets/videos/task_creation_tutorial.mp4",
+          "caption": "Video Tutorial: How to Add Tasks and Create Routines (Tap to play)"
+        },
+        {
+          "type": "subheading",
+          "text": "3.1.1. Auto Mode & Overlap Rules"
+        },
+        {
+          "type": "paragraph",
+          "text": "When adding a task in Auto mode, passed time cannot be selected. In either Auto or Manual mode, one task cannot overlap with another task."
+        },
+        {
+          "type": "subheading",
+          "text": "3.1.2. Advance Alarm Option"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-11-08.jpg",
+          "caption": "Setting how many minutes before task completion the alarm sounds"
+        },
+        {
+          "type": "paragraph",
+          "text": "The alarm option seen at the bottom when adding a task determines how many minutes before the task ends the alarm will ring."
+        }
+      ]
+    },
+    {
+      "id": "step_4",
+      "category": "",
+      "title": "4. Distraction Tracker",
+      "subtitle": "",
+      "icon": "do_not_disturb_on",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This feature was added to track what reasons cause us to get distracted and how many times a day it happens."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-20-29.jpg",
+          "caption": "Screen to enable the Distraction Tracker"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-21-12.jpg",
+          "caption": "Floating button on the screen"
+        },
+        {
+          "type": "paragraph",
+          "text": "By granting 'Display over other apps' permission and turning on 'Distraction tracker', a floating button will open. Then, whenever you notice that you have become distracted, immediately press that button and write down the reason. As a result, this distraction will be saved in your tasks for today."
+        }
+      ]
+    },
+    {
+      "id": "step_5",
+      "category": "",
+      "title": "5. Consistency Tracker",
+      "subtitle": "",
+      "icon": "insights",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Using this feature, you can track your consistency. Suppose you made a resolution that you will never indulge in your addiction or bad habit again. As long as you maintain your consistency, this tracker will continue to track your consistency streak day by day."
+        }
+      ]
+    },
+    {
+      "id": "step_6",
+      "category": "",
+      "title": "6. Export and Import Data",
+      "subtitle": "",
+      "icon": "cloud_sync",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your personal data is saved in your local storage. If you lose your phone, all your data will be lost forever. Therefore, to protect your data, export it regularly as a backup. You can also import your data onto another device."
+        }
+      ]
+    },
+    {
+      "id": "step_7",
+      "category": "",
+      "title": "7. Locked In: The Ultimate Self-Control & Anti-Addiction Architecture",
+      "subtitle": "Hardcore Time Lock, Web Shield & Shizuku Device Owner Setup Guide",
+      "icon": "lock",
+      "blocks": [
+        {
+          "type": "quote",
+          "text": "⚠️ STRICT PSYCHOLOGICAL WARNING: The Locked In feature is strictly reserved for users who have completely lost self-control and need unbreakable digital boundaries. Normal users are strongly discouraged from clicking Locked In. If you possess even minimal self-restraint, do NOT click a single button here."
+        },
+        {
+          "type": "subheading",
+          "text": "7.1. Locked In Modes: Mind Lock vs Time Lock"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Mind Lock (Mindful Mode): Triggers immediate full-screen red alert upon launching any blacklisted app or website. Offers a 1-minute mindful snooze and can be toggled on or off at will."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Time Lock (Hardcore Mode): Self-imposed irreversible lock. Once activated until your chosen date and time: zero snooze allowed, no apps/websites can be unblocked, Settings and Device Admin access are blocked, and uninstallation is strictly prohibited."
+        },
+        {
+          "type": "subheading",
+          "text": "7.2. Mandatory Pre-Activation Checklist (Xiaomi / MIUI & Other Brands)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Xiaomi / Poco / Redmi devices (MIUI & HyperOS): To prevent the MIUI cleaner widget or recent-app close button (×) from force-stopping DayAura, complete these 2 steps before activating Time Lock:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Open Recent Apps tray, long-press the DayAura card and tap the Padlock (Lock 🔒) icon. Tapping (×) will no longer kill DayAura."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Settings ➔ Apps ➔ System app settings ➔ Security ➔ Boost speed ➔ Lock apps ➔ Toggle DayAura ON."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once locked, DayAura's 0ms Accessibility Guard completely blocks access to Recent Apps, Settings, and Security Center. Furthermore, any attempt to deactivate Device Admin triggers an instant device screen lock."
+        },
+        {
+          "type": "paragraph",
+          "text": "Other brands (Samsung, Realme, Oppo, Vivo, OnePlus): Ensure Battery Optimization for DayAura is set to 'Unrestricted' / 'Don't Optimize' and Autostart is enabled."
+        },
+        {
+          "type": "subheading",
+          "text": "7.3. Web Shield & Enforced SafeSearch"
+        },
+        {
+          "type": "paragraph",
+          "text": "DayAura DNS Web Shield runs a local VPN filter. With Cloudflare Family (1.1.1.3) upstream intelligence and our DoH (DNS-over-HTTPS) kill-switch, adult mirror domains (even dynamic ones) and adult content are automatically blocked across Chrome and all browsers. Google, Bing, and YouTube SafeSearch are permanently locked on."
+        },
+        {
+          "type": "subheading",
+          "text": "7.4. Unbreakable Device Owner Setup Guide (1-Tap via Shizuku)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For users desiring a 100% tamper-proof system lock without needing a PC or terminal, DayAura integrates directly with Shizuku:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Install Shizuku from Google Play Store or GitHub and start it via Wireless Debugging (in phone Developer Options)."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. In DayAura's Locked In setup checklist, tap '⚡ Activate' under Item #5 (Unbreakable Device Owner)."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. If prompted about Google accounts: temporarily remove accounts under phone Settings ➔ Accounts & Sync, return to DayAura and tap Activate, then immediately add your accounts back once active."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. DayAura is now an unbreakable Device Owner at the Android OS level. It cannot be uninstalled or force-stopped until your timer ends or the daily emergency developer passcode is entered."
+        },
+        {
+          "type": "subheading",
+          "text": "7.5. Daily App Time Quotas, 2-Minute Warning & Gray Icon Hardware Freeze"
+        },
+        {
+          "type": "paragraph",
+          "text": "Users can assign custom daily time allowances to specific apps (e.g. YouTube 30m for lectures, Facebook 15m, or 0m for full block). This tracks live foreground screen time directly synchronized with the Android OS UsageStatsManager."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Live Remaining Schedule: In the Locked In dashboard and Apps sheet 'Remaining' tab, users can see the exact daily quota, minutes used today, and minutes remaining before lockdown."
+        },
+        {
+          "type": "paragraph",
+          "text": "• 2-Minute Heads-Up System Notification: Exactly 2 minutes before an app's daily quota runs out, DayAura fires a high-priority heads-up system notification ('⚠️ [App Name]: remain 2min') to alert the user."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Device Owner Hardware Freeze (Gray Launcher Icons): When the quota hits 0m remaining, DayAura hardware-suspends the package at the Android OS kernel level. The app launcher icon turns gray with a pause badge, and Android refuses to launch the app."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Uninstall-Proof Security: If a user exhausts their daily quota, uninstalls the app, and reinstalls it on the same day, they receive ZERO extra time. The daily usage is securely persisted inside DayAura's encrypted local database."
+        },
+        {
+          "type": "subheading",
+          "text": "7.6. Single Authorized Browser Security Shield (Only Google Chrome Allowed)"
+        },
+        {
+          "type": "paragraph",
+          "text": "To eliminate private browser loopholes and proxy bypasses, Time Lock strictly permits ONLY Google Chrome for legitimate study, work, and research. All other secondary browsers in the world (Mi Browser, Firefox, Brave, Opera, Tor, Via, UC Browser, DuckDuckGo, etc.) are automatically hardware-suspended (gray icons) and barred from opening."
+        },
+        {
+          "type": "paragraph",
+          "text": "Within Google Chrome, Android Enterprise Policy permanently disables Incognito mode, natively blocks YouTube Shorts & Facebook/Instagram Reels, and enforces Google SafeSearch."
+        }
+      ]
+    }
+  ]
+}

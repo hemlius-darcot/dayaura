@@ -1,0 +1,169 @@
+{
+  "language_code": "de",
+  "language_name": "Deutsch",
+  "doc_title": "DayAura Paper",
+  "doc_subtitle": "Offizielles Benutzerhandbuch und Funktionsübersicht für DayAura",
+  "search_placeholder": "Funktionen oder Regeln durchsuchen...",
+  "sections": [
+    {
+      "id": "introduction",
+      "category": "Über DayAura",
+      "title": "Einführung und Kernphilosophie",
+      "subtitle": "Ein Werkzeug, um den Kampf gegen sich selbst zu gewinnen",
+      "icon": "auto_awesome",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Willkommen bei DayAura Paper"
+        },
+        {
+          "type": "paragraph",
+          "text": "DayAura ist eine App zur täglichen Disziplin- und Fortschrittsverfolgung. Mittels visueller Candlestick-Charts und kontinuierlicher Linien können Sie Ihren täglichen Fortschritt präzise überwachen."
+        },
+        {
+          "type": "quote",
+          "text": "Es gibt unzählige Routine-Apps im Internet. Doch kaum eine App ermöglicht es, Routinen, Ablenkungen und Beständigkeit gleichzeitig zu messen und sich selbst im eigenen Spiegel zu rechtfertigen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Die größte Tugend eines Menschen ist es, vor sich selbst bestehen zu können und eine einzigartige Identität aufzubauen. Der größte Kampf der Welt ist der Kampf gegen sich selbst. Ich möchte, dass Sie diesen Kampf gewinnen."
+        },
+        {
+          "type": "callout",
+          "callout_type": "tip",
+          "subtitle": "Wunsch des Entwicklers",
+          "text": "Wenn DayAura auch nur die kleinste Verbesserung in Ihr Leben bringt, war diese Arbeit ein voller Erfolg. Alles Gute auf Ihrem Weg! 🥰🥳"
+        }
+      ]
+    },
+    {
+      "id": "first_launch",
+      "category": "Erste Schritte",
+      "title": "1. Erster Start und Profileinrichtung",
+      "subtitle": "Schritte zur Freischaltung der App",
+      "icon": "task_alt",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_09-47-28.jpg",
+          "caption": "Ersteinrichtung des Profils (Tippen zum Zoomen)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wählen Sie beim ersten Start Ihren aktuellen Status aus und tippen Sie auf 'Save profile and continue', um direkt zum Dashboard zu gelangen."
+        }
+      ]
+    },
+    {
+      "id": "candle_chart",
+      "category": "Analytik",
+      "title": "2. Kumulatives Candlestick-Chart",
+      "subtitle": "Tägliche Fortschrittsanalyse als Kerzen- oder Linienchart",
+      "icon": "candlestick_chart",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Das CUMULATIVE CANDLE CHART visualisiert Ihre tägliche Zielerreichung in Echtzeit."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/Screenshot_20261102_095714.png",
+          "caption": "DayAura Haupt-Dashboard (Tippen zum Zoomen)"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-58.jpg",
+          "caption": "Candlestick-Ansicht mit grünen, gelben und roten Kerzen"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-59.jpg",
+          "caption": "Kontinuierliche Linienansicht"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-16-30.jpg",
+          "caption": "Tagesverlauf nach Antippen einer Kerze (Tippen zum Zoomen)"
+        }
+      ]
+    },
+    {
+      "id": "routine_setup",
+      "category": "Routinen",
+      "title": "3. Routinen einrichten: Auto vs. Manueller Modus",
+      "subtitle": "Aufgabenverwaltung und strikte Zeitplanung",
+      "icon": "checklist",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-20-27.jpg",
+          "caption": "Aufgaben-Erstellung und Modus-Auswahl (Tippen zum Zoomen)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Im Auto-Modus planen Sie ausschließlich ab der Gegenwart in die Zukunft. Im manuellen Modus genießen Sie uneingeschränkte Planungsfreiheit."
+        },
+        {
+          "type": "callout",
+          "callout_type": "warning",
+          "subtitle": "Keine Überlappung erlaubt",
+          "text": "Aufgaben dürfen sich zeitlich unter keinen Umständen überschneiden."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-11-08.jpg",
+          "caption": "Vorzeitige Alarmeinstellung (Tippen zum Zoomen)"
+        }
+      ]
+    },
+    {
+      "id": "distraction_tracker",
+      "category": "Fokus",
+      "title": "4. Ablenkungs-Tracker",
+      "subtitle": "Fokusverluste mit dem schwebenden Button sofort erfassen",
+      "icon": "do_not_disturb_on",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Erfassen Sie in Sekundenschnelle, warum und wie oft Sie während des Tages abgelenkt werden."
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-20-29.jpg",
+          "caption": "Ablenkungs-Tracker Konfiguration (Tippen zum Zoomen)"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-21-12.jpg",
+          "caption": "Schwebender Schnell-Button auf dem Bildschirm (Tippen zum Zoomen)"
+        }
+      ]
+    },
+    {
+      "id": "consistency_tracker",
+      "category": "Gewohnheiten",
+      "title": "5. Beständigkeits-Tracker (Consistency Tracker)",
+      "subtitle": "Schwüre wahren und schlechte Gewohnheiten besiegen",
+      "icon": "insights",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Solange Sie Ihr Gelübde gegen eine schädliche Gewohnheit aufrechterhalten, dokumentiert dieser Tracker jeden einzelnen ununterbrochenen Tag Ihrer Serie."
+        }
+      ]
+    },
+    {
+      "id": "export_import",
+      "category": "Sicherheit",
+      "title": "6. Daten exportieren & importieren",
+      "subtitle": "Lokale Privatsphäre und sicheres Backup",
+      "icon": "cloud_sync",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ihre Daten bleiben stets zu 100 % auf Ihrem Gerät. Exportieren Sie regelmäßige Sicherheitskopien, um Datenverlust bei Gerätewechsel zu vermeiden."
+        }
+      ]
+    }
+  ]
+}

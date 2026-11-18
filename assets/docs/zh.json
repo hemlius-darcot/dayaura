@@ -1,0 +1,173 @@
+{
+  "language_code": "zh",
+  "language_name": "中文 (简体)",
+  "doc_title": "DayAura Paper",
+  "doc_subtitle": "DayAura 官方图文使用指南与完整功能手册",
+  "search_placeholder": "搜索功能、规则（如：K线、分心追踪、自动模式）...",
+  "sections": [
+    {
+      "id": "introduction",
+      "category": "关于",
+      "title": "DayAura 简介与核心初衷",
+      "subtitle": "战胜自我、建立内心秩序的每日自律伙伴",
+      "icon": "auto_awesome",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "欢迎来到 DayAura Paper"
+        },
+        {
+          "type": "paragraph",
+          "text": "DayAura 是一款注重内心自律与每日成长追踪的应用。通过直观的 K 线图和连续趋势线，助你以金融分析般精确的视角审视每天的行动力。"
+        },
+        {
+          "type": "quote",
+          "text": "网络上有成千上万款日程管理软件，但很难找到一款能同时追踪你的常规日程、分心诱因以及持之以恒的自律力，并让你在自己眼中问心无愧的工具。"
+        },
+        {
+          "type": "paragraph",
+          "text": "人最大的美德莫过于在自己的眼眸中证明自己，并成为独一无二的存在。世界上最艰巨的战役是与自己的交战。我真诚地希望你能在与自我的较量中赢得胜利。"
+        },
+        {
+          "type": "callout",
+          "callout_type": "tip",
+          "subtitle": "创作者寄语",
+          "text": "如果 DayAura 能给你的生活带来哪怕微小的积极转变，我的付出便有了最大的意义。祝愿你前程锦绣！🥰🥳"
+        }
+      ]
+    },
+    {
+      "id": "first_launch",
+      "category": "快速入门",
+      "title": "1. 首次启动与档案设置",
+      "subtitle": "解锁应用界面的基础步骤",
+      "icon": "task_alt",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_09-47-28.jpg",
+          "caption": "首次打开时的个人状态设置页面（点击可缩放）"
+        },
+        {
+          "type": "paragraph",
+          "text": "首次进入应用时会显示上述界面，选择你当前的状态并点击 'Save profile and continue'，即可直接进入主仪表盘。"
+        }
+      ]
+    },
+    {
+      "id": "candle_chart",
+      "category": "图表与分析",
+      "title": "2. 累积 K 线图表 (Candle Chart)",
+      "subtitle": "以 K 线与平滑趋势线记录每日执行率",
+      "icon": "candlestick_chart",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "进入主页即可看到 CUMULATIVE CANDLE CHART，在这里你的每日任务完成度会以绿、黄、红三色蜡烛图或连续线条呈现。"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/Screenshot_20261102_095714.png",
+          "caption": "主屏幕累积图表全貌（点击可缩放）"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-58.jpg",
+          "caption": "K 线图模式：绿/黄/红蜡烛图反映每日自律状态"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-10-59.jpg",
+          "caption": "趋势线模式：连续累积进度曲线"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-16-30.jpg",
+          "caption": "点击任一日期的蜡烛图即可查看历史明细（点击可缩放）"
+        }
+      ]
+    },
+    {
+      "id": "routine_setup",
+      "category": "日程与任务",
+      "title": "3. 日程建立：Auto 自动模式 vs Manual 手动模式",
+      "subtitle": "排程规则、防重叠保护与提前闹钟",
+      "icon": "checklist",
+      "blocks": [
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_10-20-27.jpg",
+          "caption": "任务添加与模式选择窗口（点击可缩放）"
+        },
+        {
+          "type": "paragraph",
+          "text": "在 Auto 模式下，已过去的时间不可排程，仅能从当下规划至未来；在 Manual 模式下，你拥有绝对自由，可根据需要灵活调整时间。"
+        },
+        {
+          "type": "callout",
+          "callout_type": "warning",
+          "subtitle": "严格禁止时间重叠",
+          "text": "无论处于哪种模式，任何两项任务的时间均不可互相重叠。"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-11-08.jpg",
+          "caption": "提前闹钟设置：设定任务结束前几分钟发出提醒（点击可缩放）"
+        }
+      ]
+    },
+    {
+      "id": "distraction_tracker",
+      "category": "专注力",
+      "title": "4. 分心追踪器 (Distraction Tracker)",
+      "subtitle": "借助屏幕悬浮按钮即时捕获专注漏洞",
+      "icon": "do_not_disturb_on",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "此功能旨在精准统计你在一天中因何种原因、分心了多少次。"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-20-29.jpg",
+          "caption": "分心追踪器设置（点击可缩放）"
+        },
+        {
+          "type": "image",
+          "asset_path": "assets/screenshots/photo_2026-11-02_12-21-12.jpg",
+          "caption": "悬浮按钮开启效果（点击可缩放）"
+        },
+        {
+          "type": "bullet",
+          "text": "开启悬浮窗权限后，屏幕会出现便捷按钮，每当你意识到自己走神时，点击按钮并记下原因，系统会自动归档至当天的任务记录中。"
+        }
+      ]
+    },
+    {
+      "id": "consistency_tracker",
+      "category": "习惯坚守",
+      "title": "5. 坚持追踪器 (Consistency Tracker)",
+      "subtitle": "恪守誓言、戒除陋习的长久伴侣",
+      "icon": "insights",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "只要你立下誓言远离有害习惯，该追踪器就会骄傲地为你持续记录下自律不破的每一天。"
+        }
+      ]
+    },
+    {
+      "id": "export_import",
+      "category": "数据安全",
+      "title": "6. 数据导出与导入 (Export & Import)",
+      "subtitle": "100% 本地存储隐私与安全迁移备份",
+      "icon": "cloud_sync",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "DayAura 的所有数据均保留在手机本地，绝不上报云端。更换设备前，请务必使用 'Export' 功能备份，在新手机上一键 'Import' 即可完美还原。"
+        }
+      ]
+    }
+  ]
+}
