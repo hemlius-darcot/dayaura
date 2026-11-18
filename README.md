@@ -78,6 +78,31 @@ flutter build apk --target-platform android-arm64 --release
 
 ---
 
+## 🔓 Open-Source Emergency Unlock Formula
+
+To ensure 100% user autonomy, this Community Edition allows users to emergency-unlock active Time Lock sessions without needing any external developer keys:
+
+### Mathematical Formula:
+$$\text{Passcode} = \text{First 6 digits of } (567673 \times \text{Exact 12-Hour Clock Time})$$
+
+### How to Calculate:
+1. Look at your phone's current 12-hour clock:
+   - **Example 1**: If it's **12:00** (AM or PM), the time integer is `1200`.
+     $$567673 \times 1200 = 681207600 \implies \mathbf{681207}$$
+   - **Example 2**: If it's **3:43** (AM or PM), the time integer is `343`.
+     $$567673 \times 343 = 194711839 \implies \mathbf{194711}$$
+2. Enter the resulting 6-digit code into the Unlock Dialog to unlock immediately.
+
+---
+
+## 🛡️ 100% Privacy & Zero-Cloud Guarantee
+
+- **Zero Ads**: 100% ad-free, distraction-free study experience.
+- **Zero Cloud Dependence**: 100% offline-first. Does not connect to any external cloud database or server.
+- **Local SQLite / JSON Storage**: All routine, distraction, and consistency logs reside strictly on your own device.
+
+---
+
 ## 📄 License & Brand Attribution
 
 DayAura is published under the **DayAura Public License (Attribution & Noncommercial with Advertising Integrity)**.

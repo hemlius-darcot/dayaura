@@ -71,42 +71,26 @@ void main() {
       expect(record.distractions![1]['name'], 'YouTube');
     });
 
-    test('DistractionService passcode generator and verification (10 slots per day)', () {
-      final nov3Date = DateTime(2026, 11, 3);
-      final codes = DistractionService.getTodayPasscodes(date: nov3Date);
-      expect(codes.length, 10);
+    test('DistractionService open-source emergency unlock passcode calculation and verification', () {
+      // Test User Example 1: 12:00 (AM or PM) -> 567673 * 1200 = 681207600 -> 681207
+      final t1200 = DateTime(2026, 11, 19, 12, 0);
+      expect(DistractionService.calculateEmergencyPasscode(time: t1200), '681207');
+      expect(DistractionService.verifyUnlockPasscode('681207', date: t1200), isTrue);
 
-      // Verify all 10 codes are unique for the day
-      final uniqueSet = codes.toSet();
-      expect(uniqueSet.length, 10);
+      // Test User Example 2: 3:43 PM (15:43) -> 567673 * 343 = 194711839 -> 194711
+      final t1543 = DateTime(2026, 11, 19, 15, 43);
+      expect(DistractionService.calculateEmergencyPasscode(time: t1543), '194711');
+      expect(DistractionService.verifyUnlockPasscode('194711', date: t1543), isTrue);
 
-      // Each code starts with DA- and is 9 chars
-      for (final code in codes) {
-        expect(code.startsWith('DA-'), isTrue);
-        expect(code.length, 9);
-        // Both with prefix and without prefix should verify
-        expect(DistractionService.verifyUnlockPasscode(code, date: nov3Date), isTrue);
-        expect(DistractionService.verifyUnlockPasscode(code.replaceAll('DA-', ''), date: nov3Date), isTrue);
-      }
+      // Both with prefix and without prefix verify
+      expect(DistractionService.verifyUnlockPasscode('DA-194711', date: t1543), isTrue);
 
-      // Slot 1 specifically matches DA-503643
-      expect(DistractionService.getDailyPasscode(month: 11, day: 3, slot: 1), 'DA-503643');
+      // Clock drift tolerance (within 2 minutes) verifies
+      final t1544 = DateTime(2026, 11, 19, 15, 44);
+      expect(DistractionService.verifyUnlockPasscode('194711', date: t1544), isTrue);
 
-      // Random fake code fails
-      expect(DistractionService.verifyUnlockPasscode('DA-000000', date: nov3Date), isFalse);
-    });
-
-    test('Option B: Multi-slot passcodes for same day are distinct and verify properly', () {
-      final today = DateTime(2026, 11, 10);
-      final slot1Code = DistractionService.getDailyPasscode(month: today.month, day: today.day, slot: 1);
-      final slot2Code = DistractionService.getDailyPasscode(month: today.month, day: today.day, slot: 2);
-      final slot3Code = DistractionService.getDailyPasscode(month: today.month, day: today.day, slot: 3);
-
-      expect(slot1Code, isNot(equals(slot2Code)));
-      expect(slot2Code, isNot(equals(slot3Code)));
-      expect(DistractionService.verifyUnlockPasscode(slot1Code, date: today), isTrue);
-      expect(DistractionService.verifyUnlockPasscode(slot2Code, date: today), isTrue);
-      expect(DistractionService.verifyUnlockPasscode(slot3Code, date: today), isTrue);
+      // Random incorrect code fails
+      expect(DistractionService.verifyUnlockPasscode('000000', date: t1543), isFalse);
     });
 
     test('Google Clipboard Mutual Exclusivity: Pinned chips are excluded from recent chips', () {

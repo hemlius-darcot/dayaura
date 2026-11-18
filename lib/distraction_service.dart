@@ -256,52 +256,7 @@ class DistractionService {
     String packageName,
     String appName,
   ) async {
-    try {
-      final url = Uri.parse('https://lslabmeelnlzkqzaumkh.supabase.co/functions/v1/dayaura-bot');
-      final resp = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'action': 'verify_app',
-          'packageName': packageName,
-          'appName': appName,
-        }),
-      ).timeout(const Duration(seconds: 15));
-
-      if (resp.statusCode == 200) {
-        final data = jsonDecode(resp.body) as Map<String, dynamic>;
-        final approved = data['approved'] == true;
-        final category = data['category']?.toString() ?? (approved ? 'Educational' : 'Gaming / Distraction');
-        final title = data['title']?.toString() ?? (approved ? 'Study App Approved' : 'Distraction App Detected');
-        final reason = data['reason']?.toString() ?? '';
-
-        final notice = AppVerificationNotice(
-          packageName: packageName,
-          appName: appName,
-          approved: approved,
-          category: category,
-          title: title,
-          reason: reason,
-          timestamp: DateTime.now(),
-        );
-
-        if (!approved) {
-          // ❌ Silent uninstall via Device Owner
-          await uninstallPackageSilently(packageName);
-        } else {
-          // ✅ Unfreeze
-          await unfreezePackage(packageName);
-        }
-
-        await removePendingInstalledApp(packageName);
-        await saveVerificationNotice(notice);
-        onAppVerificationNotice?.call(notice);
-        _notifyListeners();
-        return notice;
-      }
-    } catch (e) {
-      debugPrint('verifyAndProcessInstalledApp error for $packageName: $e');
-    }
+    // Open-source edition: 100% offline & local. Zero external API calls / Zero cloud dependency.
     return null;
   }
 
@@ -756,39 +711,50 @@ class DistractionService {
     }
   }
 
+  /// Open-source community emergency unlock formula:
+  /// Formula: 567673 * exact_12h_time (e.g. 12:00 -> 1200; 3:43 -> 343)
+  /// Result code is the first 6 digits of the multiplication product.
+  /// Example: 12:00 -> 567673 * 1200 = 681207600 -> Code: 681207
+  /// Example: 3:43  -> 567673 * 343  = 194711839 -> Code: 194711
+  static String calculateEmergencyPasscode({DateTime? time}) {
+    final dt = time ?? DateTime.now();
+    int h = dt.hour % 12;
+    if (h == 0) h = 12;
+    final timeInt = h * 100 + dt.minute;
+    final result = (567673 * timeInt).toString();
+    return result.length >= 6 ? result.substring(0, 6) : result.padRight(6, '0');
+  }
+
   static String getDailyPasscode({
     required int month,
     required int day,
     int slot = 1,
   }) {
-    final mStr = month.toString().padLeft(2, '0');
-    final dStr = day.toString().padLeft(2, '0');
-    final sStr = slot.toString().padLeft(2, '0');
-    final key = '$mStr-$dStr-slot$sStr';
-    final raw = utf8.encode('DayAura_LockedIn_MultiSlot_2026_Secure_$key');
-    final digest = sha256.convert(raw).toString();
-    final pin = int.parse(digest.substring(0, 8), radix: 16) % 900000 + 100000;
-    return 'DA-$pin';
+    return calculateEmergencyPasscode();
   }
 
   static List<String> getTodayPasscodes({DateTime? date}) {
     final dt = date ?? DateTime.now();
     return List.generate(
-      10,
-      (index) => getDailyPasscode(month: dt.month, day: dt.day, slot: index + 1),
+      5,
+      (index) => calculateEmergencyPasscode(time: dt.add(Duration(minutes: index - 2))),
     );
   }
 
   static String getTodayPasscode({DateTime? date, int slot = 1}) {
-    final dt = date ?? DateTime.now();
-    return getDailyPasscode(month: dt.month, day: dt.day, slot: slot);
+    return calculateEmergencyPasscode(time: date);
   }
 
   static bool verifyUnlockPasscode(String input, {DateTime? date}) {
-    final clean = input.trim().toUpperCase().replaceAll('DA-', '');
+    final clean = input.trim().toUpperCase().replaceAll('DA-', '').replaceAll('-', '');
     if (clean.length != 6) return false;
-    final validCodes = getTodayPasscodes(date: date);
-    return validCodes.any((c) => c.replaceAll('DA-', '') == clean);
+    final base = date ?? DateTime.now();
+    for (int offset = -2; offset <= 2; offset++) {
+      final testTime = base.add(Duration(minutes: offset));
+      final code = calculateEmergencyPasscode(time: testTime);
+      if (code == clean) return true;
+    }
+    return false;
   }
 
   Future<File> _lockedInSessionFile() async {

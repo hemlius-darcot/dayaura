@@ -24,29 +24,16 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:video_player/video_player.dart';
 import 'paper/paper_launcher.dart';
 
-const String _supabaseAppsUrl = 'https://lslabmeelnlzkqzaumkh.supabase.co';
-const String _supabaseAppsAnonKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxzbGFibWVlbG5semtxemF1bWtoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI5ODYyOTEsImV4cCI6MjEwODU2MjI5MX0.q6mZvrU_m_YrHPJGO_RdeoiNxBOeQYDo1EPr-DjmP4Q';
+// Open-source Edition: 100% offline & local-first. Zero external cloud dependencies.
+const String _supabaseAppsUrl = '';
+const String _supabaseAppsAnonKey = '';
 
-const String _profileServerUrl = String.fromEnvironment(
-  'ROUTINE_PROFILE_SERVER_URL',
-);
-bool get _profileServerConfigured =>
-    _supabaseAppsUrl.startsWith('https://') ||
-    _profileServerUrl.startsWith('http://') ||
-    _profileServerUrl.startsWith('https://');
-const String _adsSupabaseUrl = String.fromEnvironment(
-  'ADS_SUPABASE_URL',
-  defaultValue: 'https://yznxbtbsatlttllbsssh.supabase.co',
-);
-const String _adsSupabasePublishableKey = String.fromEnvironment(
-  'ADS_SUPABASE_PUBLISHABLE_KEY',
-  defaultValue:
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6bnhidGJzYXRsdHRsbGJzc3NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI5ODM3NDUsImV4cCI6MjEwODU1OTc0NX0.1CSYjwHBAFBxTkYSIqaACAOijsRYGO8rOi38WTBJXc4',
-);
-bool get _adsBackendConfigured =>
-    _adsSupabaseUrl.startsWith('https://') &&
-    _adsSupabasePublishableKey.isNotEmpty;
+const String _profileServerUrl = '';
+bool get _profileServerConfigured => false;
+
+const String _adsSupabaseUrl = '';
+const String _adsSupabasePublishableKey = '';
+bool get _adsBackendConfigured => false;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -1386,7 +1373,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Enter today\'s developer passcode for $dateStr:',
+                  'Enter emergency unlock passcode for $dateStr:',
                   style: const TextStyle(fontSize: 13),
                 ),
                 if (gracePasscode != null) ...[
@@ -1409,7 +1396,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                             const SizedBox(width: 6),
                             Expanded(
                               child: Text(
-                                'Exit passcode valid until 12:00 AM tonight: $gracePasscode',
+                                'Emergency passcode: $gracePasscode',
                                 style: const TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
@@ -1421,7 +1408,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         ),
                         const SizedBox(height: 4),
                         const Text(
-                          'After midnight, unlock code rotates and cannot be self-unlocked.',
+                          'Formula: First 6 digits of (567673 * 12h time). E.g. 3:43 -> 194711.',
                           style: TextStyle(fontSize: 11, color: Colors.white70),
                         ),
                       ],
@@ -1434,7 +1421,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   autofocus: true,
                   textCapitalization: TextCapitalization.characters,
                   decoration: InputDecoration(
-                    hintText: 'Enter passcode (e.g. DA-XXXXXX)',
+                    hintText: 'Enter 6-digit passcode (e.g. 194711)',
                     errorText: errorText,
                     border: const OutlineInputBorder(),
                     prefixIcon: const Icon(Icons.password_rounded),
@@ -2683,16 +2670,18 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     ],
                   ),
                 ),
-                const SizedBox(width: 8),
-                AdvertisementBanner(
-                  onOpenGallery: (ads) {
-                    Navigator.of(context).push(
-                      MaterialPageRoute<void>(
-                        builder: (_) => AdvertisementGalleryScreen(ads: ads),
-                      ),
-                    );
-                  },
-                ),
+                if (_adsBackendConfigured) ...[
+                  const SizedBox(width: 8),
+                  AdvertisementBanner(
+                    onOpenGallery: (ads) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => AdvertisementGalleryScreen(ads: ads),
+                        ),
+                      );
+                    },
+                  ),
+                ],
               ],
             ),
           ),
@@ -11316,7 +11305,7 @@ class _DistractingAppsSheetState extends State<_DistractingAppsSheet>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Enter today\'s developer passcode for $dateStr:',
+                  'Enter emergency unlock passcode for $dateStr:',
                   style: const TextStyle(fontSize: 13),
                 ),
                 if (gracePasscode != null) ...[
@@ -11339,7 +11328,7 @@ class _DistractingAppsSheetState extends State<_DistractingAppsSheet>
                             const SizedBox(width: 6),
                             Expanded(
                               child: Text(
-                                'Exit passcode valid until 12:00 AM tonight: $gracePasscode',
+                                'Emergency passcode: $gracePasscode',
                                 style: const TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
@@ -11351,7 +11340,7 @@ class _DistractingAppsSheetState extends State<_DistractingAppsSheet>
                         ),
                         const SizedBox(height: 4),
                         const Text(
-                          'After midnight, unlock code rotates and cannot be self-unlocked.',
+                          'Formula: First 6 digits of (567673 * 12h time). E.g. 3:43 -> 194711.',
                           style: TextStyle(fontSize: 11, color: Colors.white70),
                         ),
                       ],
@@ -11364,7 +11353,7 @@ class _DistractingAppsSheetState extends State<_DistractingAppsSheet>
                   autofocus: true,
                   textCapitalization: TextCapitalization.characters,
                   decoration: InputDecoration(
-                    hintText: 'Enter passcode (e.g. DA-XXXXXX)',
+                    hintText: 'Enter 6-digit passcode (e.g. 194711)',
                     errorText: errorText,
                     border: const OutlineInputBorder(),
                     prefixIcon: const Icon(Icons.password_rounded),
